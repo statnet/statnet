@@ -1,0 +1,15 @@
+Package: statnet
+Version: 1.2
+Date: April 4, 2007
+Title:  Statistical Modeling of Network and Graph Data
+Author: Mark S. Handcock <handcock@stat.washington.edu>, with invaluable help
+        from David R. Hunter <dhunter@stat.psu.edu>,
+        Carter T. Butts <buttsc@uci.edu>,
+        Steven M. Goodreau <goodreau@u.washington.edu>,
+        Martina Morris <morrism@u.washington.edu>
+Maintainer: Mark S. Handcock <handcock@stat.washington.edu>
+Depends: network, ergm, latentnet
+Suggests: coda, KernSmooth
+Description: A suite of packages for analysis and statistical modeling of network data.
+License: GPL version 2 (June, 1991)
+URL: http://csde.washington.edu/statnet
