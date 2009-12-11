@@ -8,11 +8,11 @@ open source, and has the following attribution requirements
 
 (a) you agree to retain in 'statnet' and any modifications to 'statnet'
     the copyright, author attribution and URL information as
-    provided at http://statnetproject.org/attribution
+    provided at http://statnet.org/attribution
 (b) you agree that 'statnet' and any modifications to 'statnet' will,
     when used, display the attribution:
-     Based on 'statnet' project software (http://statnetproject.org).
-     For license and citation information see http://statnetproject.org/attribution
+     Based on 'statnet' project software (http://statnet.org).
+     For license and citation information see http://statnet.org/attribution
 --------------------------------------------------
 
 What does this mean?
@@ -31,8 +31,10 @@ Mark S. Handcock, University of Washington
 David R. Hunter, Penn State University
 Carter T. Butts, University of California-Irvine
 Steven M. Goodreau, University of Washington
+Pavel N. Krivitsky, Carnegie Mellon University
 Martina Morris, University of Washington
 
 The 'statnet' development team
 
 Copyright 2007
+

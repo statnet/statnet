@@ -1,5 +1,5 @@
-cat("'statnet' is a suite of packages for the statistical modeling of network data.\n")
-cat('Please read the license using license.statnet()\n')
+#cat("'statnet' is a suite of packages for the statistical modeling of network data.\n")
+#cat('Please read the license using license.statnet()\n')
 
 citHeader("If you are using 'statnet' for research that will be published, we
 request that you acknowledge this with the following citation:")
@@ -10,9 +10,10 @@ citEntry(entry="Manual",
                              as.person("David R. Hunter"),
                              as.person("Carter T. Butts"),
                              as.person("Steven M. Goodreau"),
+                             as.person("Pavel N. Krivitsky"),
                              as.person("Martina Morris")), 
          year         = 2003,
-         note         = paste("Version",substring(library(help="statnet",lib.loc=NULL,character.only=TRUE)$info[[1]][2],first=16),". Project home page at http://statnetproject.org"),
+         note         = paste("Version",substring(library(help="statnet",lib.loc=NULL,character.only=TRUE)$info[[1]][2],first=16),". Project home page at http://statnet.org"),
          address      = "Seattle, WA",
          url          = "http://CRAN.R-project.org/package=statnet",
          
@@ -20,7 +21,7 @@ citEntry(entry="Manual",
          paste("Mark S. Handcock, David R. Hunter, Carter T. Butts, Steven M. Goodreau, and Martina Morris (2003) ", 
                "Software Tools for the Statistical Modeling of Network Data. Version ",
 substring(library(help="statnet",lib.loc=NULL,character.only=TRUE)$info[[1]][2],first=16),
-         ". Project home page at http://statnetproject.org",
+         ". Project home page at http://statnet.org",
          ",", " URL http://CRAN.R-project.org/package=statnet.",
                sep="")
          )

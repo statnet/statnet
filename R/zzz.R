@@ -1,9 +1,9 @@
 #  File R/zzz.R
-#  Part of the "statnet" package, http://statnetproject.org
+#  Part of the "statnet" package, http://statnet.org
 #
 #  This software is distributed under the GPL-3 license.  It is free,
 #  open source, and has the attribution requirements (GPL Section 7) in
-#    http://statnetproject.org/attribution
+#    http://statnet.org/attribution
 #
 # Copyright 2003 Mark S. Handcock, University of Washington
 #                David R. Hunter, Penn State University
@@ -29,9 +29,10 @@
 "                    David R. Hunter, Penn State University\n",
 "                    Carter T. Butts, University of California-Irvine\n",
 "                    Steven M. Goodreau, University of Washington\n",
+"                    Pavel N. Krivitsky, Carnegie Mellon University\n",
 "                    Martina Morris, University of Washington\n",sep=""))
     cat('Type help(package="statnet") to get started.\n\n')
-    cat('Based on "statnet" project software (http://statnetproject.org).\n',
-        'For license and citation information see http://statnetproject.org/attribution\n',
+    cat('Based on "statnet" project software (http://statnet.org).\n',
+        'For license and citation information see http://statnet.org/attribution\n',
         'or type citation("statnet").\n')
 }

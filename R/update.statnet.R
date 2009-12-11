@@ -1,9 +1,9 @@
 #  File R/update.statnet.R
-#  Part of the "statnet" package, http://statnetproject.org
+#  Part of the "statnet" package, http://statnet.org
 #
 #  This software is distributed under the GPL-3 license.  It is free,
 #  open source, and has the attribution requirements (GPL Section 7) in
-#    http://statnetproject.org/attribution
+#    http://statnet.org/attribution
 #
 # Copyright 2003 Mark S. Handcock, University of Washington
 #                David R. Hunter, Penn State University
@@ -15,18 +15,18 @@
 # for use by other researchers. We require that the attributions
 # are retained with each function.
 ######################################################################
-"update.statnet" <- function(object, ..., 
-            contriburl = "http://statnetproject.org",
+"update_statnet" <- function(object, ..., 
+            contriburl = "http://statnet.org",
             repos = getOption("repos"), type = getOption("pkgType"),
             ask=TRUE)
 {
   cran.contriburl <- contrib.url(repos, type)
   if(contriburl %in% c("http://csde.washington.edu/statnet",
                        "csde.washington.edu/statnet",
-                       "statnetproject.org",
-                       "www.statnetproject.org",
-                       "http://www.statnetproject.org",
-                       "http://statnetproject.org"
+                       "statnet.org",
+                       "www.statnet.org",
+                       "http://www.statnet.org",
+                       "http://statnet.org"
                       )){
      contriburl <- "http://csde.washington.edu/statnet"
   }
