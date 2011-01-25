@@ -1,25 +1,6 @@
-#  File R/zzz.R
-#  Part of the "statnet" package, http://statnet.org
-#
-#  This software is distributed under the GPL-3 license.  It is free,
-#  open source, and has the attribution requirements (GPL Section 7) in
-#    http://statnet.org/attribution
-#
-# Copyright 2003 Mark S. Handcock, University of Washington
-#                David R. Hunter, Penn State University
-#                Carter T. Butts, University of California - Irvine
-#                Martina Morris, University of Washington
-# Copyright 2007 statnet Development Team
-#
-# We have invested a lot of time and effort in creating 'statnet',
-# for use by other researchers. We require that the attributions
-# are retained with each function.
-######################################################################
-######################################################################
 #
 # .First.lib is run when the package is loaded.
 #
-
 .First.lib <- function(lib, pkg){
     DESCpath <- file.path(system.file(package="statnet"), "DESCRIPTION")
     info <- read.dcf(DESCpath)
