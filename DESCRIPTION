@@ -1,7 +1,7 @@
 Package: statnet
-Version: 2.6
-Date: 2011-10-08
-Title:  Software tools for the Statistical Modeling of Network Data
+Version: 3.0
+Date: 2012-03-12
+Title:  Software tools for the Statistical Analysis of Network Data
 Author: Mark S. Handcock <handcock@ucla.edu>,
         David R. Hunter <dhunter@stat.psu.edu>,
         Carter T. Butts <buttsc@uci.edu>,
@@ -9,8 +9,8 @@ Author: Mark S. Handcock <handcock@ucla.edu>,
         Pavel N. Krivitsky  <pavel@cmu.edu>,
         Martina Morris <morrism@u.washington.edu>
 Maintainer: David R. Hunter <dhunter@stat.psu.edu>
-Depends: R (>= 2.11), network (>= 1.7), ergm (>= 2.4-3), latentnet (>= 2.4-1), degreenet (>= 1.1), sna (>= 2.2), abind, shapes, tools, utils
-Suggests: relevent, networksis, hergm, ergm.userterms
-Description: An integrated set of tools for the representation, visualization, analysis and simulation of network data. For an introduction type: help(package='statnet')
+Depends:  R (>= 2.13), network (>= 1.7-1), ergm (>= 3.0), sna (>= 2.2), networkDynamic (>= 0.2-2)
+Suggests:  relevent (>= 1.0), latentnet (>= 2.4-1), ergm.userterms (>= 3.0-1)
+Description: An integrated set of tools for the representation, visualization, analysis, and simulation of network data. For an introduction type: help(package='statnet')
 License: GPL-3 + file LICENSE
 URL: http://statnet.org
