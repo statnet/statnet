@@ -1,6 +1,6 @@
 Package: statnet
-Version: 3.0
-Date: 2012-03-12
+Version: 3.0-1
+Date: 2012-03-15
 Title:  Software tools for the Statistical Analysis of Network Data
 Author: Mark S. Handcock <handcock@ucla.edu>,
         David R. Hunter <dhunter@stat.psu.edu>,
