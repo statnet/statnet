@@ -1,15 +1,16 @@
 Package: statnet
-Version: 3.2-1
-Date: 2013-02-20
+Version: 3.2-11882-11883.1-2013.03.21-16.22.24
+Date: 2013-03-21
 Title:  Software tools for the Statistical Analysis of Network Data
-Author: c(
-	   person("Mark S.", "Handcock", role=c("aut"), email="handcock@stat.ucla.edu"),
-           person("David R.", "Hunter", role=c("aut"), email="dhunter@stat.psu.edu"),
-   	   person("Carter T.", "Butts", role=c("aut"), email="buttsc@uci.edu"),
-           person("Steven M.", "Goodreau", role=c("aut"), email="goodreau@u.washington.edu"),
-           person("Pavel N.", "Krivitsky", role=c("aut","cre"), email="krivitsky@stat.psu.edu"),
-     	   person("Martina", "Morris", role=c("aut"), email="morrism@u.washington.edu"))
-Depends:  R (>= 2.13), network (>= 1.7-1), ergm (>= 3.2), sna (>= 2.2), networkDynamic (>= 0.2-2), tergm (>= 3.2), ergm.count (>=3.2), latentnet (>= 2.4-1), ergm.userterms (>= 3.2-1), relevent (>= 1.0)
+Authors@R: c(
+	     person("Mark S.", "Handcock", role=c("aut"), email="handcock@stat.ucla.edu"),
+	     person("David R.", "Hunter", role=c("aut"), email="dhunter@stat.psu.edu"),
+	     person("Carter T.", "Butts", role=c("aut"), email="buttsc@uci.edu"),
+	     person("Steven M.", "Goodreau", role=c("aut"), email="goodreau@u.washington.edu"),
+	     person("Pavel N.", "Krivitsky", role=c("aut","cre"), email="krivitsky@stat.psu.edu"),
+	     person("Martina", "Morris", role=c("aut"), email="morrism@u.washington.edu")
+	     )
+Depends:  R (>= 2.13), network (>= 1.7-1), ergm (>= 3.2), sna (>= 2.2), networkDynamic (>= 0.2-2), tergm (>= 3.2), ergm.count (>= 3.2), latentnet (>= 2.4-1), ergm.userterms (>= 3.2-1), relevent (>= 1.0)
 Description: An integrated set of tools for the representation, visualization, analysis, and simulation of network data. For an introduction type: help(package='statnet')
 License: GPL-3 + file LICENSE
 URL: http://statnet.org
