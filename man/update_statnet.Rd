@@ -43,7 +43,7 @@ in the \code{Suggests} line.
 \examples{
 \dontrun{
 # Update from statnet.org
-update_statnet(repos="http://csde.washington.edu/statnet")
+update_statnet(repos="http://statnet.csde.washington.edu")
 }
 }
 \keyword{utilities}
