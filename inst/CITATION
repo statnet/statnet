@@ -1,31 +1,19 @@
-#cat("'statnet' is a suite of packages for the statistical modeling of network data.\n")
-#cat('Please read the license using license.statnet()\n')
+library(statnet.common)
+statnet.cite.head("statnet")
+statnet.cite.pkg("statnet")
 
-citHeader("If you are using 'statnet' for research that will be published, we
-request that you acknowledge this with the following citation:")
-
-citEntry(entry="Manual",
-         title = "statnet: Software Tools for the Statistical Modeling of Network Data",
+bibentry("Article",
+         title = "statnet: Software Tools for the Representation, Visualization, Analysis and Simulation of Network Data",
          author = personList(as.person("Mark S. Handcock"),
-                             as.person("David R. Hunter"),
-                             as.person("Carter T. Butts"),
-                             as.person("Steven M. Goodreau"),
-                             as.person("Pavel N. Krivitsky"),
-                             as.person("Martina Morris")), 
-         year         = 2003,
-         note         = paste("Version",substring(library(help="statnet",lib.loc=NULL,character.only=TRUE)$info[[1]][2],first=16),". Project home page at http://statnet.org"),
-         address      = "Seattle, WA",
-         url          = "http://CRAN.R-project.org/package=statnet",
-         
-         textVersion = 
-         paste("Mark S. Handcock, David R. Hunter, Carter T. Butts, Steven M. Goodreau, and Martina Morris (2003) ", 
-               "Software Tools for the Statistical Modeling of Network Data. Version ",
-substring(library(help="statnet",lib.loc=NULL,character.only=TRUE)$info[[1]][2],first=16),
-         ". Project home page at http://statnet.org",
-         ",", " URL http://CRAN.R-project.org/package=statnet.",
-               sep="")
-         )
+           as.person("David R. Hunter"),
+           as.person("Carter T. Butts"),
+           as.person("Steven M. Goodreau"),
+           as.person("Morris, Martina")),
+         journal = "Journal of Statistical Software",
+         year = 2008,
+         volume = 24,
+         number = 1,
+	 pages = "1--11",
+         url = "http://www.jstatsoft.org/v24/i01")
 
-citFooter("We have invested a lot of time and effort in creating the",
-          "'statnet' suite of packages for use by other researchers.",
-          "Please cite it in all papers where it is used.")
+statnet.cite.foot("statnet")
