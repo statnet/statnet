@@ -1,27 +1,40 @@
 \name{update_statnet}
 \alias{update_statnet}
-\title{Updates the Component Packages of statnet}
+\title{Update the Component Packages of the Statnet Suite}
+\description{A wrapper around \code{\link{update.packages}} to update
+  the component packages of Statnet Suite to their latest versions.
+}
 \usage{
-update_statnet(\dots)
+update_statnet(\dots, ask = FALSE, checkBuilt = TRUE, addURLs = character())
 }
 \arguments{
+
+  \item{ask, checkBuilt}{Arguments to \code{\link{update.packages}}
+    documentation. The defaults are different from those of that
+    function.}
+    
+    \item{addURLs}{Optional repository URLs in addition to CRAN, such as
+      \url{http://www.statnet.csde.washington.edu/preview}. Defaults to
+      none.}
+
   \item{\dots}{
-    Arguments passed to \code{\link{update.packages}}
+    Additional arguments to be passed to \code{\link{update.packages}}.
   }
-}
-\description{
-  
-  This function has been deprecated, and may be removed in a future
-  release. Currently, it exits with an error, advising the user to use
-  \code{\link{update.packages}} instead. For installing public beta
-  releases from the Statnet Project reposititories, see
-  \url{http://www.statnet.org/preview}.
-  
 }
 \value{
   \code{update_statnet} returns NULL invisibly.  
 }
 \seealso{
-  \code{\link{update.packages}}, \code{\link{install.packages}}
+  \code{\link{setRepositories}}, \code{\link{update.packages}}, \code{\link{install.packages}}
+}
+\examples{
+\dontrun{
+# Update from CRAN
+update_statnet()
+
+# Update from statnet.org's preview release, taking packages from CRAN
+# as needed
+update_statnet(addURLs="http://statnet.csde.washington.edu/preview")
+}
 }
 \keyword{utilities}
