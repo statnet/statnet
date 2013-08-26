@@ -8,6 +8,7 @@ Authors@R: c(
 	     person("Carter T.", "Butts", role=c("aut"), email="buttsc@uci.edu"),
 	     person("Steven M.", "Goodreau", role=c("aut"), email="goodreau@u.washington.edu"),
 	     person("Pavel N.", "Krivitsky", role=c("aut","cre"), email="krivitsky@stat.psu.edu"),
+	     person("Skye", "Bender-deMoll", role=c("aut","cre"), email="skyebend@skyeome.net"),
 	     person("Martina", "Morris", role=c("aut"), email="morrism@u.washington.edu")
 	     )
 Depends:  R (>= 2.15), statnet.common (>= 3.2), network (>= 1.7-2), ergm (>= 3.2), sna (>= 2.2), networkDynamic (>= 0.4), tergm (>= 3.2), ergm.count (>= 3.2), latentnet (>= 2.4-4)
