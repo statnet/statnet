@@ -25,6 +25,8 @@ update_statnet(\dots, ask = FALSE, checkBuilt = TRUE, addURLs = character())
   
   Updates the list component packages of Statnet Suite, using \code{\link{setRepositories}} and \code{\link{update.packages}}.
   
+  Since there are no good ways to update packages once they are loaded, this function should be called immediately after restarting R. 
+  
 }
 \value{
   \code{update_statnet} returns NULL invisibly.  
@@ -35,11 +37,11 @@ update_statnet(\dots, ask = FALSE, checkBuilt = TRUE, addURLs = character())
 \examples{
 \dontrun{
 # Update from CRAN
-update_statnet()
+statnet::update_statnet()
 
 # Update from statnet.org's preview release, taking packages from CRAN
 # as needed
-update_statnet(addURLs="http://statnet.csde.washington.edu/preview")
+statnet::update_statnet(addURLs="http://statnet.csde.washington.edu/preview")
 }
 }
 \keyword{utilities}

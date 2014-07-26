@@ -4,3 +4,5 @@ exportPattern("update_statnet")
 
 import(statnet.common,ergm.count,latentnet,networkDynamic,sna,tergm,ergm)
 importFrom(network,network)
+importFrom(tools, package_dependencies)
+

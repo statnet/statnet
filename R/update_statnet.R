@@ -2,12 +2,11 @@ update_statnet <- function(..., ask = FALSE, checkBuilt=TRUE, addURLs = characte
   if(length(addURLs)) setRepositories(addURLs = addURLs)
   update.packages(oldPkgs=c("statnet", "statnet.common", "network", "ergm", "sna", "networkDynamic", "tergm", "ergm.count", "latentnet", "networksis", "degreenet", "relevent"), ask = ask, checkBuilt = checkBuilt, ...)
   
-  message("Restart R and use \"update.packages(oldPkgs='statnet')\" to get the updates.")
 }
 
 
 check.updates <- function(show=T) {
-  stopifnot(require("tools")) ## load tools
+  
   ap <- installed.packages() 
   deps <- package_dependencies('statnet', which=c('Depends','Imports','Suggests'), db = ap, recursive = F)[[1]]
   deps <- c('statnet', deps)
@@ -24,7 +23,7 @@ check.updates <- function(show=T) {
     if (nrow(olds.statnet) > 0) {
       message("\nThere are updates for the following statnet packages on CRAN:")
       print(olds.statnet)
-      message("Restart R and use \"update.packages(oldPkgs='statnet')\" to get the updates.")
+      message("Restart R and use \"statnet::update_statnet()\" to get the updates.")
     }
   } else {
     return(olds.statnet)
