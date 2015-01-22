@@ -1,6 +1,6 @@
 Package: statnet
-Version: 2015.01.0
-Date: 2015-01-20
+Version: 2014.12.0
+Date: 2014-12-06
 Title:  Software tools for the Statistical Analysis of Network Data
 Authors@R: c(
 	     person("Mark S.", "Handcock", role=c("aut"), email="handcock@stat.ucla.edu"),
@@ -11,8 +11,8 @@ Authors@R: c(
 	     person("Skye", "Bender-deMoll", role=c("aut"), email="skyebend@skyeome.net"),
 	     person("Martina", "Morris", role=c("aut"), email="morrism@u.washington.edu")
 	     )
-Depends:  R (>= 3.0), network (>= 1.11), ergm (>= 3.2.4), sna (>= 2.3), networkDynamic (>= 0.7), tergm (>= 3.2.4), ergm.count (>= 3.1.1), latentnet (>= 2.6)
-Suggests: networksis (>= 2.1.1), degreenet (>= 1.2), relevent (>= 1.0), ndtv (>= 0.5), EpiModel (>= 1.1)
+Depends:  R (>= 3.0), network (>= 1.11.3), ergm (>= 3.2.4), sna (>= 2.3.2), networkDynamic (>= 0.7.1), tergm (>= 3.2.4), ergm.count (>= 3.1.1), latentnet (>= 2.6.0)
+Suggests: networksis (>= 2.1.2), degreenet (>= 1.2), relevent (>= 1.0.3), ndtv (>= 0.5.1), EpiModel (>= 1.1.2)
 Imports: statnet.common (>= 3.2.2)
 Description: An integrated set of tools for the representation, visualization, analysis, and simulation of network data. For an introduction, type help(package='statnet')
 License: GPL-3 + file LICENSE
