@@ -5,7 +5,7 @@ update_statnet <- function(..., ask = FALSE, checkBuilt=TRUE, addURLs = characte
 }
 
 
-check.updates <- function(show=T) {
+check.updates <- function(show=TRUE) {
   
   ap <- installed.packages() 
   deps <- package_dependencies('statnet', which=c('Depends','Imports','Suggests'), db = ap, recursive = F)[[1]]

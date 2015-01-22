@@ -14,7 +14,7 @@ update_statnet(\dots, ask = FALSE, checkBuilt = TRUE, addURLs = character())
     function.}
     
     \item{addURLs}{Optional repository URLs in addition to CRAN, such as
-      \url{http://www.statnet.csde.washington.edu/preview}. Defaults to
+      \url{http://statnet.csde.washington.edu/preview}. Defaults to
       none.}
 
   \item{\dots}{
