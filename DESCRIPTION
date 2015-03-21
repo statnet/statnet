@@ -14,6 +14,6 @@ Authors@R: c(
 Depends:  R (>= 3.0), network (>= 1.11.3), ergm (>= 3.2.4), sna (>= 2.3.2), networkDynamic (>= 0.7.1), tergm (>= 3.2.4), ergm.count (>= 3.1.1), latentnet (>= 2.7.0)
 Suggests: networksis (>= 2.1.2), degreenet (>= 1.2), relevent (>= 1.0.3), ndtv (>= 0.5.1), EpiModel (>= 1.1.2)
 Imports: statnet.common (>= 3.2.2)
-Description: An integrated set of tools for the representation, visualization, analysis, and simulation of network data. For an introduction, type help(package='statnet')
+Description: An integrated set of tools for the representation, visualization, analysis, and simulation of network data. For an introduction, type help(package='statnet').
 License: GPL-3 + file LICENSE
 URL: http://statnet.org
