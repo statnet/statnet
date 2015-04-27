@@ -86,14 +86,10 @@ and robustness.
     to store information about about evolution of a network over time,
     defining a \code{\link[networkDynamic]{networkDynamic}} object
     class.
-  }
+    
+    \item \pkg{ndtv}: (Network Dynamic Temporal Visualization): Exports dynamic network data from networkDynamic objects as animated movies or other representations of relational structure and node attributes that change over time.
   
-  In addition, the following packages are available from the author:
-  
-  \itemize{ \item \pkg{rSonia}: provides a set of methods to facilitate
-    exporting data and parameter settings and launching SoNIA (Social
-    Network Image Animator). SoNIA facilitates interactive browsing of
-    dynamic network data and exporting animations as a QuickTime movies.
+    \item \pkg{EpiModel}: Tools for building, solving, and plotting mathematical models of infectious disease, including stochastic models of disease on dynamic networks with demographic processes.
     }
     
     \pkg{statnet} is a metapackage, depending on all of the above

@@ -11,8 +11,8 @@ Authors@R: c(
 	     person("Skye", "Bender-deMoll", role=c("aut"), email="skyebend@skyeome.net"),
 	     person("Martina", "Morris", role=c("aut","cre"), email="morrism@u.washington.edu")
 	     )
-Depends:  R (>= 3.0), ergm (>= 3.2.4), sna (>= 2.3.2), tergm (>= 3.2.4), ergm.count (>= 3.1.1), latentnet (>= 2.7.0)
-Suggests: network (>= 1.12), networkDynamic (>= 0.7.1), networksis (>= 2.1.3), degreenet (>= 1.2), relevent (>= 1.0.4), ndtv (>= 0.5.1), EpiModel (>= 1.1.4)
+Depends:  R (>= 3.0), network (>= 1.12), networkDynamic (>= 0.7.1), ergm (>= 3.2.4), sna (>= 2.3.2), tergm (>= 3.2.4), ergm.count (>= 3.1.1), latentnet (>= 2.7.0)
+Suggests: networksis (>= 2.1.3), degreenet (>= 1.2), relevent (>= 1.0.4), ndtv (>= 0.5.1), EpiModel (>= 1.1.4)
 Imports: statnet.common (>= 3.2.2)
 Description: An integrated set of tools for the representation, visualization, analysis, and simulation of network data. For an introduction, type help(package='statnet').
 License: GPL-3 + file LICENSE
