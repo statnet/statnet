@@ -1,6 +1,6 @@
 Package: statnet
-Version: 2015.6.0
-Date: 2015-06-19
+Version: 2015.6.1
+Date: 2015-07-10
 Title:  Software Tools for the Statistical Analysis of Network Data
 Authors@R: c(
 	     person("Mark S.", "Handcock", role=c("aut"), email="handcock@stat.ucla.edu"),
