@@ -2,7 +2,10 @@
 # Export all names
 exportPattern("update_statnet")
 
-import(statnet.common,ergm.count,latentnet,networkDynamic,sna,tergm,ergm)
+import(statnet.common,ergm.count,networkDynamic,sna,tergm,ergm)
 importFrom(network,network)
 importFrom(tools, package_dependencies)
-
+importFrom(utils, installed.packages)
+importFrom(utils, old.packages)
+importFrom(utils, setRepositories)
+importFrom(utils, update.packages)

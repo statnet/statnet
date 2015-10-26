@@ -141,22 +141,20 @@ Besag, J., 1974, Spatial interaction and the statistical analysis
 of lattice systems (with discussion), Journal of the Royal Statistical
 Society, B, 36, 192-236.
 
-Butts CT (2006).
- {\pkg{netperm}: Permutation Models for Relational Data}.
- Version 0.2, \url{http://erzuli.ss.uci.edu/R.stuff}.
+Carter T. Butts (2014). 
+  {\pkg{sna}: Tools for Social Network Analysis. R package}
+  version 2.3-2. \url{http://CRAN.R-project.org/package=sna}
 
-Butts CT (2007).
- {\pkg{sna}: Tools for Social Network Analysis}.
- Version 1.5, \url{http://erzuli.ss.uci.edu/R.stuff}.
+Butts C (2015). 
+  {\pkg{network}: Classes for Relational Data}. 
+  The Statnet Project (\url{http://www.statnet.org}). R package version 1.12.0,
+  \url{CRAN.R-project.org/package=network}.
 
 Butts CT (2008).
  {\pkg{network}: {A} Package for Managing Relational Data in \R.}
  {Journal of Statistical Software}, {24} (2).
  \url{http://www.jstatsoft.org/v24/i02/}.
 
-Butts CT, with help~from David~Hunter, Handcock MS (2007).
- {\pkg{network}: Classes for Relational Data}.
- Version 1.3, \url{http://erzuli.ss.uci.edu/R.stuff}.
 
 Frank, O., and Strauss, D.(1986). Markov graphs. Journal of the American
 Statistical Association, 81, 832-842. 
