@@ -1,5 +1,5 @@
 Package: statnet
-Version: 2015.11
+Version: 2015.11.0
 Date: 2015-11-04
 Title:  Software Tools for the Statistical Analysis of Network Data
 Authors@R: c(
