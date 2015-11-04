@@ -98,7 +98,7 @@ New functionality is being added over time.
     \item \pkg{tergm} is a collection of extentions to \pkg{ergm}
       enabling it to fit discrete time models for temporal (dynamic) networks.  
       The main function
-      in \pkg{tergm} is \code{link[tergm]{stergm} (the ``s'' stands for separable),
+      in \pkg{tergm} is \code{stergm} (the ``s'' stands for separable),
       which allows the user to specify one ergm for tie formation, and another ergm
       for tie dissolution.  The models can be fit to network panel data, or to a single
       cross-sectional network with ancillary data on tie duration. 
@@ -141,7 +141,7 @@ all of the packages above that are labeled "optional download".  Those can, of
 course, also be installed individually.
 
 Each package in \pkg{statnet} has associated help files and internal
-documentation that is supported by the information on the Statnet
+documentation, and additional the information can be found on the Statnet
 Project website (\url{http://statnet.org/}).  Tutorials, instructions
 on how to join the statnet help
 mailing list, references and links to further resources are provided
@@ -150,26 +150,28 @@ methodology behind each specific package
 use the \code{citation("packagename")} function in \R after loading \pkg{statnet}.
 
 We have invested much time and effort in creating the
-\code{statnet} suite of packages for use by other researchers.
-Please cite it when you use it!
+\code{statnet} suite of packages and supporting material
+so that others can use and build on these tools.
+All we ask in return is that you cite it when you use it.
 For publication of results obtained from \pkg{statnet}, the original
-authors are to be cited as described in
-\code{citation("statnet")}. If you are only using specific
+authors are to be cited as described in \code{citation("statnet")}.
+If you are only using specific
 package(s) from the suite, please cite the specific
-package(s) you use as described in the appropriate
+package(s) as described in the appropriate
 \code{citation("packgename")}.  Thank you!
 
 
 }
 
 \author{
-Mark S. Handcock \email{handcock@stat.washington.edu},\cr
+Mark S. Handcock \email{handcock@stat.ucla.edu},\cr
 David R. Hunter \email{dhunter@stat.psu.edu},\cr
 Carter T. Butts \email{buttsc@uci.edu},\cr
-Steven M. Goodreau \email{goodreau@u.washington.edu},\cr
-Pavel N. Krivitsky \email{pavel@cmu.edu}, 
+Steven M. Goodreau \email{goodreau@uw.edu},\cr
+Pavel N. Krivitsky \email{pavel@uow.edu.au}, 
 Skye Bender-deMoll \email{skyebend@skyeome.net} and \cr
-Martina Morris \email{morrism@u.washington.edu}
+Samuel Jenness (for EpiModel) \email{sjenness@uw.edu}
+Martina Morris \email{morrism@uw.edu}
 
 Maintainer: Martina Morris \email{morris@uw.edu}
 }
