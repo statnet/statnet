@@ -1,5 +1,6 @@
 \name{statnet-package}
 \alias{statnet-package}
+\alias{statnet}
 \docType{package}
 \title{
 A Suite of Packages for the Statistical Modeling of Network Data
