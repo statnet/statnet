@@ -7,7 +7,7 @@ Authors@R: c(
 	     person("David R.", "Hunter", role=c("aut"), email="dhunter@stat.psu.edu"),
 	     person("Carter T.", "Butts", role=c("aut"), email="buttsc@uci.edu"),
 	     person("Steven M.", "Goodreau", role=c("aut"), email="goodreau@u.washington.edu"),
-	     person("Pavel N.", "Krivitsky", role=c("aut"), email="pavel@uow.edu.au"),
+	     person("Pavel N.", "Krivitsky", role=c("aut"), email="pavel@uow.edu.au", comment=c(ORCID="0000-0002-9101-3362")),
 	     person("Skye", "Bender-deMoll", role=c("aut"), email="skyebend@skyeome.net"),
 	     person("Martina", "Morris", role=c("aut","cre"), email="morrism@u.washington.edu")
 	     )
