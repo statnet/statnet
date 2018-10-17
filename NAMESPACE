@@ -1,10 +1,15 @@
-
-# Export all names
-exportPattern("update_statnet")
-
-import(statnet.common,ergm.count,network,networkDynamic,sna,tergm,ergm)
 importFrom(tools, package_dependencies)
 importFrom(utils, installed.packages)
 importFrom(utils, old.packages)
 importFrom(utils, setRepositories)
 importFrom(utils, update.packages)
+
+# Token imports
+import(statnet.common,ergm.count)
+importFrom(ergm, ergm)
+importFrom(network, network)
+importFrom(networkDynamic, networkDynamic)
+importFrom(tergm, stergm)
+importFrom(sna, netlm)
+
+export(update_statnet)
