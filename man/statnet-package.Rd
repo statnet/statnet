@@ -30,8 +30,8 @@ New functionality is being added over time.
   non-interactive (or ``batch'') mode to allow longer or multiple tasks
   to be processed without user interaction.  The suite of packages are
   available on the Comprehensive \R Archive Network (CRAN) at
-  \url{http://www.r-project.org/} and also on the \pkg{statnet} project
-  website at \url{http://statnet.org/}
+  \url{https://www.r-project.org/} and also on the \pkg{statnet} project
+  website at \url{http://www.statnet.org/}
 
   The \pkg{statnet} suite of packages has the following components:
   
@@ -143,7 +143,7 @@ course, also be installed individually.
 
 Each package in \pkg{statnet} has associated help files and internal
 documentation, and additional the information can be found on the Statnet
-Project website (\url{http://statnet.org/}).  Tutorials, instructions
+Project website (\url{http://www.statnet.org/}).  Tutorials, instructions
 on how to join the statnet help
 mailing list, references and links to further resources are provided
 there.  For the reference paper(s) that provide information on the theory and

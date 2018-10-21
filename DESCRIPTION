@@ -15,6 +15,13 @@ Depends:  R (>= 3.0), tergm (>= 3.5.2), ergm.count (>= 3.3), sna (>= 2.4)
 Suggests: networksis (>= 2.1.3), degreenet (>= 1.3.1), relevent (>= 1.0.4), ndtv (>= 0.12.3), EpiModel (>= 1.6.5), latentnet (>= 2.9.0), tsna (>= 0.2), ergm.rank (>= 1.1), ergm.ego (>= 0.4)
 Imports: ergm (>= 3.9.4), network (>= 1.13), networkDynamic (>= 0.9), statnet.common (>= 4.1.4)
 BugReports: https://github.com/statnet/statnet/issues
-Description: An integrated set of tools for the representation, visualization, analysis, and simulation of network data. For an introduction, type help(package='statnet').
+Description: Statnet is a set of packages for statistical network analysis that are 
+  designed to work together because they share common data representations and 'API' 
+  design.  They provide an integrated set of tools for the representation, 
+  visualization, analysis, and simulation of many different forms of network data.  
+  This package is designed to make it easy to install and load all of the 
+  key 'statnet' packages in a single step.  Learn more about 'statnet' 
+  at <http://www.statnet.org>.  For an introduction to functions in this package, 
+  type help(package='statnet').
 License: GPL-3 + file LICENSE
 URL: http://statnet.org
