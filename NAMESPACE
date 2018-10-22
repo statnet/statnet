@@ -11,5 +11,6 @@ importFrom(network, network)
 importFrom(networkDynamic, networkDynamic)
 importFrom(tergm, stergm)
 importFrom(sna, netlm)
+importFrom(tsna, forward.reachable)
 
 export(update_statnet)
