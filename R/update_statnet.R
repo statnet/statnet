@@ -1,6 +1,21 @@
 update_statnet <- function(..., ask = FALSE, checkBuilt=TRUE, addURLs = character()){
   if(length(addURLs)) setRepositories(addURLs = addURLs)
-  update.packages(oldPkgs=c("statnet", "statnet.common", "network", "ergm", "sna", "networkDynamic", "tergm", "ergm.count", "ergm.rank", "latentnet", "networksis", "degreenet", "relevent", "ergm.ego"), ask = ask, checkBuilt = checkBuilt, ...)
+  update.packages(oldPkgs=c("statnet", 
+                            "statnet.common", 
+                            "network", 
+                            "sna", 
+                            "ergm", 
+                            "networkDynamic", 
+                            "tsna",
+                            "tergm",
+                            "ergm.count", 
+                            "ergm.rank", 
+                            "latentnet", 
+                            "networksis", 
+                            "degreenet", 
+                            "relevent", 
+                            "ergm.ego"), 
+                  ask = ask, checkBuilt = checkBuilt, ...)
   
 }
 
@@ -8,7 +23,9 @@ update_statnet <- function(..., ask = FALSE, checkBuilt=TRUE, addURLs = characte
 check.updates <- function(show=TRUE) {
   
   ap <- installed.packages() 
-  deps <- package_dependencies('statnet', which=c('Depends','Imports','Suggests'), db = ap, recursive = F)[[1]]
+  deps <- package_dependencies('statnet', 
+                               which=c('Depends','Imports','Suggests'), 
+                               db = ap, recursive = F)[[1]]
   deps <- c('statnet', deps)
   
   olds <- tryCatch({old.packages()},

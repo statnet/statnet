@@ -7,11 +7,13 @@ A Suite of Packages for the Statistical Modeling of Network Data
 }
 \description{
 \pkg{statnet} is a collection of software packages for statistical network 
-analysis that are designed to work together, and provide seamless access to 
+analysis that are designed to work together, with a common data storage
+format and API.  Together, these provide seamless access to 
 a broad range of network analytic and graphical methodology.
+
 The packages implement recent advances in network modeling based on
 exponential-family random graph models (ERGM), as well as latent space
-models and more traditional network methods. Together, the packages
+models and more traditional network methods. They
 provide a comprehensive framework for ERGM-based cross-sectional and
 dynamic network modeling: tools for
 model estimation, model evaluation, model-based network simulation, and
@@ -30,8 +32,10 @@ New functionality is being added over time.
   non-interactive (or ``batch'') mode to allow longer or multiple tasks
   to be processed without user interaction.  The suite of packages are
   available on the Comprehensive \R Archive Network (CRAN) at
-  \url{https://www.r-project.org/} and also on the \pkg{statnet} project
-  website at \url{http://www.statnet.org/}
+  \url{https://www.r-project.org/} and the development repository is on GitHub 
+  at \url{https://github.com/statnet}, where issues can be reported
+  and pull requests can be made.  More information can be found on 
+  the \pkg{statnet} project website at \url{http://www.statnet.org/}
 
   The \pkg{statnet} suite of packages has the following components:
   
@@ -53,10 +57,17 @@ New functionality is being added over time.
     defining a \code{\link[networkDynamic]{networkDynamic}} object
     class. (automatically downloaded)
     }
-    
+  
   For analyzing cross-sectional networks:
 
   \itemize{
+
+    \item \pkg{sna} is a set of tools for traditional social network
+    analysis. It provides functions to calculate classical descriptive 
+    summary methods for networks, like centrality scores and component 
+    size distributions, and for conducting some basic statistical 
+    tests, like the Conditional Uniform Graph (CUG) tests.
+    (automatically downloaded)
   
     \item \pkg{ergm} is a collection of functions to fit, simulate from,
     plot and evaluate exponential random graph models. The main
@@ -74,21 +85,19 @@ New functionality is being added over time.
     fit models for networks whose relations are counts. 
     (automatically downloaded)
 
+    \item \pkg{ergm.ego} is an extension to \pkg{ergm} enabling it to
+    fit models for networks based on egocentrically sampled network data. 
+    (automatically downloaded)
+
+    \item \pkg{ergm.rank} is an extension to \pkg{ergm} enabling it to
+    fit models for networks whose relations are ranks. 
+    (optional download)
+
     \item \pkg{latentnet} is a package to fit and evaluate latent position
     and cluster models for statistical networks The probability of a tie
     is expressed as a function of distances between these nodes in a
     latent space as well as functions of observed dyadic level
     covariates. 
-    (optional download)
-
-    \item \pkg{sna} is a set of tools for traditional social network
-    analysis. 
-    (automatically downloaded)
-    
-    \item \pkg{degreenet} is a package for the statistical modeling of
-    degree distributions of networks. It includes power-law models such
-    as the Yule and Waring, as well as a range of alternative models
-    that have been proposed in the literature. 
     (optional download)
     }
     
@@ -96,6 +105,16 @@ New functionality is being added over time.
   
   \itemize{
   
+    \item \pkg{tsna} is a collection of extensions to \pkg{sna} that provide
+    descriptive summary statistics for temporal networks. 
+    (optional download)
+    
+    \item \pkg{ndtv} The R package ndtv renders dynamic network data from a
+    \code{\link[networkDynamic]{networkDynamic}} object
+    as movies, interactive HTML5 animations, or other static representations
+    of changing relational structures and attributes.  
+    (optional download)
+    
     \item \pkg{tergm} is a collection of extentions to \pkg{ergm}
       enabling it to fit discrete time models for temporal (dynamic) networks.  
       The main function
@@ -105,10 +124,6 @@ New functionality is being added over time.
       cross-sectional network with ancillary data on tie duration. 
       (automatically downloaded)
 
-    \item \pkg{tsna} is a collection of extensions to \pkg{sna} that provide descriptive
-    summary statistics for temporal networks. 
-    (optional download)
-    
     \item \pkg{relevent} is a package providing tools to fit relational
     event models. 
     (optional download)
@@ -121,25 +136,44 @@ New functionality is being added over time.
    \item \pkg{ergm.userterms} provides a template for users who want to
     implement their own new ERGM terms.
     (separate download required)
+    
+    \item \pkg{degreenet} is a package for the statistical modeling of
+    degree distributions of networks. It includes power-law models such
+    as the Yule and Waring, as well as a range of alternative models
+    that have been proposed in the literature. 
+    (optional download)
 
     \item \pkg{networksis} is a package to simulate bipartite graphs 
     with fixed marginals through sequential importance sampling.
     (optional download)
     
-    \item \pkg{EpiModel} is a package for simulating epidemics
+    \item \pkg{EpiModel} is a package for simulating epidemics on stochastic
+    dynamic networks, where the network estimation and simulation is handled
+    by the \pkg{statnet} tools.  Learn more at the EpiModel Project website 
+    (\url{http://www.EpiModel.org/}) 
     (optional download)
   
   }
   
     
 \pkg{statnet} is a metapackage; its only purpose is to provide a convenient
-way for a user to load all of the packages in the statnet suite.  It does this by
-depending on all of the packages, so that loading the \pkg{statnet} 
-package into \R automatically loads all packages above that are labeled
-"automatically downloaded".  If the user specifies 
-\code{install.packages("statnet",dependencies=T)}, \pkg{statnet} will also download
-all of the packages above that are labeled "optional download".  Those can, of
-course, also be installed individually.
+mechanism for a user to load all of the packages in the statnet suite.  The
+user has two options:  
+
+  \itemize{
+  
+    \item Load the core packages for data handling
+      (\pkg{network} and \pkg{networkDynamic}) descriptive statistics
+      (\pkg{sna} and \pkg{tsna}) and statistical modeling and inference
+      (\pkg{ergm} and \pkg{tergm}) for cross-sectional and temporal networks.
+      This is the default behavior using \code{install.packages("statnet")}
+
+    \item Load all of the packages in the suite.  This is the result when 
+      the user specifies \code{install.packages("statnet",dependencies=T)}.  
+
+}
+
+All packages can, of course, also be installed individually.
 
 Each package in \pkg{statnet} has associated help files and internal
 documentation, and additional the information can be found on the Statnet
@@ -153,7 +187,7 @@ use the \code{citation("packagename")} function in \R after loading \pkg{statnet
 We have invested much time and effort in creating the
 \code{statnet} suite of packages and supporting material
 so that others can use and build on these tools.
-All we ask in return is that you cite it when you use it.
+We ask in return that you cite it when you use it.
 For publication of results obtained from \pkg{statnet}, the original
 authors are to be cited as described in \code{citation("statnet")}.
 If you are only using specific
