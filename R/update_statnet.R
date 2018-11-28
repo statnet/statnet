@@ -1,6 +1,9 @@
 update_statnet <- function(..., ask = FALSE, checkBuilt=TRUE, addURLs = character()){
   if(length(addURLs)) setRepositories(addURLs = addURLs)
-  update.packages(oldPkgs=c("statnet", "statnet.common", "network", "ergm", "sna", "networkDynamic", "tergm", "ergm.count", "ergm.rank", "latentnet", "networksis", "degreenet", "relevent", "ergm.ego"), ask = ask, checkBuilt = checkBuilt, ...)
+  update.packages(oldPkgs=c("statnet", "statnet.common", "network", "sna", "ergm", 
+                            "networkDynamic", "tsna", "tergm", "ndtv", "relevent",
+                            "ergm.ego", "ergm.count", "ergm.rank", "latentnet", "EpiModel",
+                            "networksis", "degreenet"), ask = ask, checkBuilt = checkBuilt, ...)
   
 }
 
