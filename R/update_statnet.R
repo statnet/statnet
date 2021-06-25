@@ -26,9 +26,6 @@
 #' # Update from CRAN
 #' statnet::update_statnet()
 #' 
-#' # Update from statnet.org's preview release, taking packages from CRAN
-#' # as needed
-#' statnet::update_statnet(addURLs="http://statnet.csde.washington.edu/preview")
 #' }
 #'
 #' @importFrom tools package_dependencies

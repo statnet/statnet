@@ -1,4 +1,4 @@
-#' Easily Installthe \code{statnet} Packages for Statistical Network
+#' Easily Install and Load the \code{statnet} Packages for Statistical Network
 #' Analysis
 #' 
 #' \code{statnet} is a collection of software packages for statistical network
@@ -32,7 +32,7 @@
 #' available on the Comprehensive \R Archive Network (CRAN) at
 #' \url{https://www.r-project.org/}.
 #' 
-#'   Extensive workshop and training materials are also available online, 
+#' Extensive workshop and training materials are also available online, 
 #' please see the \code{statnet} project
 #' website at \url{https://www.statnet.org/} for more information.
 #' 
@@ -57,9 +57,10 @@
 #’     defining a \code{\link[networkDynamic]{networkDynamic}} object
 #’     class that tracks changes in the status of nodes and links. 
 #’     (automatically downloaded)
+#'
 #’     }
 #’     
-#’   For analyzing cross-sectional networks:
+#’ For analyzing cross-sectional networks:
 #’ 
 #’   \itemize{
 #’   
@@ -69,12 +70,12 @@
 #’ 
 #’     \item \pkg{ergm} is a collection of functions to fit, simulate from,
 #’     plot and assess exponential-family random graph models. The main
-#’     functions within the \pkg{ergm} package are
+#’     functions within the \pkg{ergm} package are 
 #’     \code{\link[ergm]{ergm}}, a function to fit linear exponential
 #’     random graph models in which the probability of a graph is dependent
 #’     upon a vector of graph statistics specified by the user;
-#’     \code{simulate}, a function to simulate random graphs using an ERGM;
-#’     \code{mcmc.diagnostics}, a function for assessing model convergence;
+#’     \code{\link[ergm]{simulate}}, a function to simulate random graphs using an ERGM;
+#’     \code{\link[ergm]{mcmc.diagnostics}}, a function for assessing model convergence;
 #’     and \code{\link[ergm]{gof}}, a function to evaluate the goodness of
 #’     fit of an ERGM to the data. The package supports the analysis of both
 #’     binary and continuously valued ties. 
@@ -99,18 +100,18 @@
 #’     covariates. 
 #’     (automatically downloaded)
 #’     
-#’     \item \pkg{statnetWeb} a shiny app providing basic access to functionality
+#’     \item \pkg{statnetWeb} is a shiny app that provides access to basic tools
 #’     from \pkg{network}, \pkg{sna} and \pkg{ergm} for network analysis.  
-#’     This is a great tool for teaching an introductory course, or for learning
+#’     This is a great package for teaching an introductory course, or for learning
 #’     about basic \pkg{statnet} functionality in a user-friendly interactive
 #’     app that runs in a web-browser.  Running the online version of the app 
-#’     does not even require any software to be downloade or installed.
+#’     does not require any software to be downloaded or installed.
 #’     (separate download required)
 #’     
 #’     }
 #’ 
 #’     
-#’   For temporal (dynamic) network analysis:
+#’ For temporal (dynamic) network analysis:
 #’   
 #’   \itemize{
 #’   
@@ -119,12 +120,14 @@
 #’     (automatically downloaded)
 #’     
 #’     \item \pkg{tergm} is a collection of extentions to \pkg{ergm}
-#’     enabling it to fit discrete time models for temporal (dynamic) networks.  
-#’     Like \pkg{ergm}, \pkg{tergm} has a function for estimation (\code{tergm}),
-#’     an functions for simulation and model diagnostics (\code{simulate},
-#’     \code{mcmc.diagnostics}).
-#’     \pkg{tergm} can be used to model two
-#’     different types of discrete temporal network data:  
+#’     for fitting discrete time models for temporal (dynamic) networks.  
+#’     Like \pkg{ergm}, \pkg{tergm} has a function for estimation 
+#'     (\code{\link[tergm]{tergm}}),
+#’     and functions for simulation and model diagnostics 
+#'     (\code{\link[tergm]{simulate}}\code{},
+#'     \code{\link[tergm]{mcmc.diagnostics}} and \code{\link[tergm]{gof}}).
+#’     \pkg{tergm} can be used 
+#'     with two different types of discrete temporal network data:  
 #’     a time-series network panel 
 #’     (using conditional maximum likelihood estimation), or a 
 #’     single cross-sectional
