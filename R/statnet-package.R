@@ -41,7 +41,7 @@
 #' 
 #' For data handling:
 #’   
-#’   \itemize{
+#’ \itemize{
 #’ 
 #’     \item \pkg{network} is a package to create, store, modify and plot
 #’     the data in network objects.  The \code{\link[network]{network}}
@@ -58,11 +58,11 @@
 #’     class that tracks changes in the status of nodes and links. 
 #’     (automatically downloaded)
 #'
-#’     }
+#’ }
 #’     
 #’ For analyzing cross-sectional networks:
 #’ 
-#’   \itemize{
+#’ \itemize{
 #’   
 #’     \item \pkg{sna} is a set of tools for traditional social network
 #’     analysis. 
@@ -108,12 +108,12 @@
 #’     does not require any software to be downloaded or installed.
 #’     (separate download required)
 #’     
-#’     }
+#’ }
 #’ 
 #’     
 #’ For temporal (dynamic) network analysis:
 #’   
-#’   \itemize{
+#’ \itemize{
 #’   
 #’     \item \pkg{tsna} is a collection of extensions to \pkg{sna} that 
 #’     provide descriptive summary statistics for temporal networks. 
@@ -121,11 +121,11 @@
 #’     
 #’     \item \pkg{tergm} is a collection of extentions to \pkg{ergm}
 #’     for fitting discrete time models for temporal (dynamic) networks.  
-#’     Like \pkg{ergm}, \pkg{tergm} has a function for estimation 
+#’     Like \pkg{ergm}, \pkg{tergm} has functions for estimation 
 #'     (\code{\link[tergm]{tergm}}),
-#’     and functions for simulation and model diagnostics 
-#'     (\code{\link[tergm]{simulate}}\code{},
-#'     \code{\link[tergm]{mcmc.diagnostics}} and \code{\link[tergm]{gof}}).
+#’     and simulation 
+#'     (\code{\link[tergm]{simulate.tergm}}\code{}, and uses the
+#'     \pkg{ergm} functions for model diagnostics and assessment.
 #’     \pkg{tergm} can be used 
 #'     with two different types of discrete temporal network data:  
 #’     a time-series network panel 
@@ -145,11 +145,11 @@
 #’     of changing relational structures and attributes. 
 #’     (automatically downloaded)
 #’ 
-#’     }
+#’ }
 #’     
 #’   Additional utilities and packages:
 #’ 
-#’   \itemize{
+#’ \itemize{
 #’ 
 #’    \item \pkg{statnet.common} provides utilities for all the statnet packages.
 #’     (automatically downloaded)
@@ -179,7 +179,7 @@
 #’     models are based on the \pkg{statnet} suite.  See the Epimodel
 #’     Project website for more information \url{https://www.epimodel.org/}.
 #’     (separate download required)
-#’   }
+#’ }
 #’   
 #’     
 #’ \pkg{statnet} is a metapackage; its only purpose is to provide a convenient

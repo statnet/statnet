@@ -49,8 +49,8 @@ downloaded with the \pkg{statnet} package are noted):
 For data handling:
 
     (\code{\link[tergm]{tergm}}),
-    (\code{\link[tergm]{simulate}}\code{},
-    \code{\link[tergm]{mcmc.diagnostics}} and \code{\link[tergm]{gof}}).
+    (\code{\link[tergm]{simulate.tergm}}\code{}, and uses the
+    \pkg{ergm} functions for model diagnostics and assessment.
     with two different types of discrete temporal network data:
 }
 \author{

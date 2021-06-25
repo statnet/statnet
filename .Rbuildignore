@@ -12,3 +12,5 @@ appveyor.yml
 .gdb_history
 ^revdep$
 ^README.md$
+^\.github
+^inst\/CITATION.old
