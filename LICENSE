@@ -8,11 +8,11 @@ open source, and has the following attribution requirements
 
 (a) you agree to retain in 'statnet' and any modifications to 'statnet'
     the copyright, author attribution and URL information as
-    provided at http://statnet.org/attribution
+    provided at https://statnet.org/attribution
 (b) you agree that 'statnet' and any modifications to 'statnet' will,
     when used, display the attribution:
-     Based on 'statnet' project software (http://statnet.org).
-     For license and citation information see http://statnet.org/attribution
+     Based on 'statnet' project software (https://statnet.org).
+     For license and citation information see https://statnet.org/attribution
 --------------------------------------------------
 
 What does this mean?
@@ -27,14 +27,7 @@ attributions must also appear when the package is loaded
 
 Enjoy!
 
-Mark S. Handcock, University of California-Los Angeles
-David R. Hunter, Penn State University
-Carter T. Butts, University of California-Irvine
-Steven M. Goodreau, University of Washington
-Pavel N. Krivitsky, University of Wollongong
-Martina Morris, University of Washington
+The 'statnet' development team https://statnet.org/devteam
 
-The 'statnet' development team
-
-Copyright 2007-2015
+Copyright 2007-2021
 
