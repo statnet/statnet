@@ -11,7 +11,7 @@ Depends:
   ergm (>= 4.0),
   tergm (>= 4.0)
 Imports:
-  statnet.common (>=4.5),
+  statnet.common (>= 4.5),
   network (>= 1.17),
   networkDynamic(>= 0.11),
   sna (>= 2.4),
@@ -21,8 +21,7 @@ Imports:
   ergm.rank (>= 4.0),
   ergm.ego (>= 0.9),
   latentnet (>= 2.10),
-  relevent (>= 1.0-4),
-  statnet.common (>= 4.5.0)
+  relevent (>= 1.0-4)
 BugReports: https://github.com/statnet/statnet/issues
 Description: This package is designed to make it easy to install and load 
   key packages from the 'statnet' suite in a single step.  The `statnet`

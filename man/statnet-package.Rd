@@ -4,7 +4,7 @@
 \name{statnet-package}
 \alias{statnet-package}
 \alias{statnet}
-\title{Easily Installthe \code{statnet} Packages for Statistical Network
+\title{Easily Install and Load the \code{statnet} Packages for Statistical Network
 Analysis}
 \description{
 \code{statnet} is a collection of software packages for statistical network
@@ -39,7 +39,7 @@ via pull requests.  Current versions of the packages are
 available on the Comprehensive \R Archive Network (CRAN) at
 \url{https://www.r-project.org/}.
 
-  Extensive workshop and training materials are also available online, 
+Extensive workshop and training materials are also available online, 
 please see the \code{statnet} project
 website at \url{https://www.statnet.org/} for more information.
 
@@ -47,6 +47,11 @@ The full suite of packages has the following components (those automatically
 downloaded with the \pkg{statnet} package are noted):
 
 For data handling:
+
+    (\code{\link[tergm]{tergm}}),
+    (\code{\link[tergm]{simulate}}\code{},
+    \code{\link[tergm]{mcmc.diagnostics}} and \code{\link[tergm]{gof}}).
+    with two different types of discrete temporal network data:
 }
 \author{
 Mark S. Handcock \email{handcock@stat.ucla.edu},\cr David R. Hunter
