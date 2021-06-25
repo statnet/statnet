@@ -12,7 +12,7 @@ Depends:
   tergm (>= 4.0)
 Imports:
   network (>= 1.17),
-  networkDynamic(>=0.11),
+  networkDynamic(>= 0.11),
   sna (>= 2.4),
   tsna (>= 0.3),
   ndtv (>= 0.13.0),
