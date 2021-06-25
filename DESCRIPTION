@@ -1,7 +1,7 @@
 Package: statnet
 Version: 2021.6
 Date: 2021-06-24
-Title:  Software Tools for the Statistical Analysis of Network Data
+Title: Software Tools for the Statistical Analysis of Network Data
 Authors@R: c(
 	     person("Statnet Development Team", role=c("aut"), email="contact@statnet.org"),
 	     person("Martina", "Morris", role=c("aut","cre"), email="morrism@uw.edu")
@@ -34,3 +34,5 @@ Description: This package is designed to make it easy to install and load
   For an introduction to functions in this package, type help(package='statnet').
 License: GPL-3 + file LICENSE
 URL: https://statnet.org
+RoxygenNote: 7.1.1
+Encoding: UTF-8
