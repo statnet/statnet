@@ -10,7 +10,7 @@ Depends:
   R (>= 3.5),
   ergm (>= 4.0),
   tergm (>= 4.0)
-Import:
+Imports:
   network (>= 1.17),
   networkDynamic(>=0.11),
   sna (>= 2.4),
