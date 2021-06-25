@@ -1,45 +1,36 @@
 Package: statnet
-Version: 2019.6
-Date: 2019-06-10
+Version: 2021.6
+Date: 2021-06-24
 Title:  Software Tools for the Statistical Analysis of Network Data
 Authors@R: c(
-	     person("Mark S.", "Handcock", role=c("aut"), email="handcock@stat.ucla.edu"),
-	     person("David R.", "Hunter", role=c("aut"), email="dhunter@stat.psu.edu"),
-	     person("Carter T.", "Butts", role=c("aut"), email="buttsc@uci.edu"),
-	     person("Steven M.", "Goodreau", role=c("aut"), email="goodreau@uw.edu"),
-	     person("Pavel N.", "Krivitsky", role=c("aut"), email="pavel@uow.edu.au", comment=c(ORCID="0000-0002-9101-3362")),
-	     person("Skye", "Bender-deMoll", role=c("aut"), email="skyebend@skyeome.net"),
+	     person("Statnet Development Team", role=c("aut"), email="contact@statnet.org"),
 	     person("Martina", "Morris", role=c("aut","cre"), email="morrism@uw.edu")
 	     )
 Depends:
   R (>= 3.5),
-  tergm (>= 3.6),
-  ergm.count (>= 3.3),
+  ergm (>= 4.0),
+  tergm (>= 4.0)
+Import:
+  network (>= 1.17),
+  networkDynamic(>=0.11),
   sna (>= 2.4),
-  tsna (>= 0.3)
-Imports:
-  ergm (>= 3.10.4),
-  network (>= 1.15),
-  networkDynamic (>= 0.10.0),
-  statnet.common (>= 4.2)
-Suggests:
-  ergm.rank (>= 1.2.0),
-  ergm.ego (>= 0.5),
-  EpiModel (>= 1.7.2),
-  degreenet (>= 1.3-3),
-  latentnet (>= 2.9.0),
-  networksis (>= 2.1-3),
-  relevent (>= 1.0-4),
-  ndtv (>= 0.13.0)
+  tsna (>= 0.3),
+  ndtv (>= 0.13.0),
+  ergm.count (>= 4.0),
+  ergm.rank (>= 4.0),
+  ergm.ego (>= 0.9),
+  latentnet (>= 2.10),
+  relevent (>= 1.0-4)
 BugReports: https://github.com/statnet/statnet/issues
-Description: Statnet is a collection of packages for statistical network analysis that are 
-  designed to work together because they share common data representations and 'API' 
-  design.  They provide an integrated set of tools for the representation, 
-  visualization, analysis, and simulation of many different forms of network data.  
-  This package is designed to make it easy to install and load the 
-  key 'statnet' packages in a single step.  Learn more about 'statnet' 
-  at <http://www.statnet.org>.  Tutorials for many packages can be found 
-  at <https://github.com/statnet/Workshops/wiki>.  For an introduction to functions in this package, 
-  type help(package='statnet').
+Description: This package is designed to make it easy to install and load 
+  key packages from the 'statnet' suite in a single step.  The `statnet`
+  suite is a collection of packages for statistical network analysis that are 
+  designed to work together; they share common data representations, 'API' 
+  design and a uniform user interface.  Together they provide an integrated 
+  set of tools for the exploration, visualization, statistical analysis, and 
+  simulation of many different forms of network data.  
+  Learn more about 'statnet' at <https://www.statnet.org>.  Tutorials for many 
+  packages can be found at <https://github.com/statnet/Workshops/wiki>.  
+  For an introduction to functions in this package, type help(package='statnet').
 License: GPL-3 + file LICENSE
-URL: http://statnet.org
+URL: https://statnet.org
