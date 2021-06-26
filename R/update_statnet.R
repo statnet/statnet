@@ -1,19 +1,32 @@
-#' Update the Component Packages of the Statnet Suite
+#' Update the Core Component Packages of the \pkg{statnet} Suite
 #' 
-#' A wrapper around \code{\link{update.packages}} to update the component
-#' packages of Statnet Suite to their latest versions.
+#' A wrapper around \code{\link{update.packages}} to update the core component
+#' packages of the \pkg{statnet} Suite to their latest versions.
 #' 
 #' 
-#' Updates the list component packages of Statnet Suite, using
-#' \code{\link{setRepositories}} and \code{\link{update.packages}}.
+#' Updates the core component packages of Statnet Suite, using
+#' \code{\link[utils]{setRepositories}} and \code{\link[utils]{update.packages}}.  For
+#' the list of packages automatically updated, see \code{\link[statnet]{statnet}}.
 #' 
-#' Since there are no good ways to update packages once they are loaded, this
-#' function should be called immediately after restarting R.
+#' This function should be called immediately after restarting R, 
+#' since there are no good ways to update packages once they are loaded.
+#' 
+#' With no additional arguments specified, the function will update the
+#' packages from CRAN.
+#' 
+#' You can also obtain the latest build for the suite of packages
+#' from the master branches of the \code{statnet}
+#' public GitHub repositories with the \code{betas} argument.  This will
+#' install from the binaries hosted at \url{https://statnet.r-universe.dev}.  Note
+#' that while these nightly builds have passed continuous integration tests, 
+#' they may have other bugs and incompatibilities.  
+#' Please report any bugs on the GitHub package repository.
 #' 
 #' @param ask,checkBuilt Arguments to \code{\link{update.packages}}
 #' documentation. The defaults are different from those of that function.
-#' @param addURLs Optional repository URLs in addition to CRAN, such as
-#' \url{http://statnet.csde.washington.edu/preview}. Defaults to none.
+#' @param betas Optional repository specification 
+#' \url{https://statnet.r-universe.dev} to install the latest public
+#' development versions of the packages. Defaults to FALSE.
 #' @param \dots Additional arguments to be passed to
 #' \code{\link{update.packages}}.
 #' @return \code{update_statnet} returns NULL invisibly.
@@ -26,17 +39,24 @@
 #' # Update from CRAN
 #' statnet::update_statnet()
 #' 
+#' # Update using latest build of GitHub public master branch on r-universe
+#' statnet::update_statnet(betas = TRUE)
 #' }
 #'
 #' @importFrom tools package_dependencies
 #' @importFrom utils installed.packages old.packages setRepositories update.packages
 #' @export
-update_statnet <- function(..., ask = FALSE, checkBuilt=TRUE, addURLs = character()){
-  if(length(addURLs)) setRepositories(addURLs = addURLs)
-  update.packages(oldPkgs=c("statnet", "statnet.common", "network", "sna", "ergm", 
-                            "networkDynamic", "tsna", "tergm", "ndtv", "relevent",
-                            "ergm.ego", "ergm.count", "ergm.rank", "latentnet", "EpiModel",
-                            "networksis", "degreenet"), ask = ask, checkBuilt = checkBuilt, ...)
+update_statnet <- function(..., ask = FALSE, checkBuilt=TRUE, betas = FALSE){
+  if(betas) {
+    repos = "https://statnet.r-universe.dev") 
+  } else {
+    repos = getOption("repos")}
+  update.packages(oldPkgs=c("statnet", "rle", "statnet.common", 
+                            "network", "ergm", 
+                            "networkDynamic", "tsna", "tergm", "ndtv",
+                            "ergm.ego", "ergm.count", "ergm.rank", "latentnet"), 
+                  repos = repos,
+                  ask = ask, checkBuilt = checkBuilt, ...)
   
 }
 

@@ -74,7 +74,7 @@
 #'     \code{\link[ergm]{ergm}}, a function to fit linear exponential
 #'     random graph models in which the probability of a graph is dependent
 #'     upon a vector of graph statistics specified by the user;
-#'     \code{\link[ergm]{simulate}}, a function to simulate random graphs using an ERGM;
+#'     \code{\link[ergm]{simulate.ergm}}, a function to simulate random graphs using an ERGM;
 #'     \code{\link[ergm]{mcmc.diagnostics}}, a function for assessing model convergence;
 #'     and \code{\link[ergm]{gof}}, a function to evaluate the goodness of
 #'     fit of an ERGM to the data. The package supports the analysis of both
@@ -104,7 +104,7 @@
 #'     from \pkg{network}, \pkg{sna} and \pkg{ergm} for network analysis.  
 #'     This is a great package for teaching an introductory course, or for learning
 #'     about basic \pkg{statnet} functionality in a user-friendly interactive
-#'     app that runs in a web-browser.  Running the online version of the app 
+#'     GUI that runs in a web-browser.  Running the online version of the app 
 #'     does not require any software to be downloaded or installed.
 #'     (separate download required)
 #'     
@@ -192,8 +192,7 @@
 #' use the \code{citation("packagename")} function in \R after loading \pkg{statnet}.
 #' 
 #' We have invested much time and effort in creating the
-#' \code{statnet} suite of packages and supporting material
-#' so that others can use and build on these tools.
+#' \code{statnet} suite of packages and supporting material.
 #' We ask in return that you cite it when you use it.
 #' For publication of results obtained from \pkg{statnet}, the original
 #' authors are to be cited as described in \code{citation("statnet")}.
@@ -205,13 +204,7 @@
 #' @name statnet-package
 #' @aliases statnet-package statnet
 #' @docType package
-#' @author Mark S. Handcock \email{handcock@@stat.ucla.edu},\cr David R. Hunter
-#' \email{dhunter@@stat.psu.edu},\cr Carter T. Butts
-#' \email{buttsc@@uci.edu},\cr Steven M. Goodreau \email{goodreau@@uw.edu},\cr
-#' Pavel N. Krivitsky \email{pavel@@uow.edu.au}, \cr Skye Bender-deMoll
-#' \email{skyebend@@skyeome.net}, \cr Samuel Jenness (for EpiModel)
-#' \email{samuel.m.jenness@@emory.edu}, and \cr Martina Morris
-#' \email{morrism@@uw.edu}
+#' @author Statnet Development Team \email{contact@statnet.org}
 #' 
 #' Maintainer: Martina Morris \email{morris@@uw.edu}
 #'

@@ -2,7 +2,7 @@
 % Please edit documentation in R/update_statnet.R
 \name{update_statnet}
 \alias{update_statnet}
-\title{Update the Component Packages of the Statnet Suite}
+\title{Update the Core Component Packages of the \pkg{statnet} Suite}
 \usage{
 update_statnet(..., ask = FALSE, checkBuilt = TRUE, addURLs = character())
 }
@@ -14,21 +14,32 @@ update_statnet(..., ask = FALSE, checkBuilt = TRUE, addURLs = character())
 documentation. The defaults are different from those of that function.}
 
 \item{addURLs}{Optional repository URLs in addition to CRAN, such as
-\url{http://statnet.csde.washington.edu/preview}. Defaults to none.}
+\url{https://statnet.r-universe.dev}. Defaults to none.}
 }
 \value{
 \code{update_statnet} returns NULL invisibly.
 }
 \description{
-A wrapper around \code{\link{update.packages}} to update the component
-packages of Statnet Suite to their latest versions.
+A wrapper around \code{\link{update.packages}} to update the core component
+packages of the \pkg{statnet} Suite to their latest versions.
 }
 \details{
-Updates the list component packages of Statnet Suite, using
-\code{\link{setRepositories}} and \code{\link{update.packages}}.
+Updates the core component packages of Statnet Suite, using
+\code{\link[utils]{setRepositories}} and \code{\link[utils]{update.packages}}.  For
+the list of packages automatically updated, see \code{\link[statnet]{statnet}}.
 
-Since there are no good ways to update packages once they are loaded, this
-function should be called immediately after restarting R.
+This function should be called immediately after restarting R, 
+since there are no good ways to update packages once they are loaded.
+
+With no additional arguments specified, the function will update the
+packages from CRAN.
+
+To obtain the latest build (binaries) from the master branch of the \code{statnet}
+public GitHub repositories, add the url for \code{statnet at R-universe}.
+More information here: \url{https://statnet.r-universe.dev}.  Note
+that while these nightly builds have passed continuous integration tests, 
+they may have other bugs.  Please report any bugs you find on the GitHub package
+repository.
 }
 \examples{
 
@@ -36,6 +47,8 @@ function should be called immediately after restarting R.
 # Update from CRAN
 statnet::update_statnet()
 
+# Update latest build of public master branch from GitHub
+statnet::update_statnet()
 }
 
 }
