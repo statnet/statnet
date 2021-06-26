@@ -4,7 +4,7 @@
 \alias{update_statnet}
 \title{Update the Core Component Packages of the \pkg{statnet} Suite}
 \usage{
-update_statnet(..., ask = FALSE, checkBuilt = TRUE, addURLs = character())
+update_statnet(..., ask = FALSE, checkBuilt = TRUE, betas = FALSE)
 }
 \arguments{
 \item{\dots}{Additional arguments to be passed to
@@ -13,8 +13,9 @@ update_statnet(..., ask = FALSE, checkBuilt = TRUE, addURLs = character())
 \item{ask, checkBuilt}{Arguments to \code{\link{update.packages}}
 documentation. The defaults are different from those of that function.}
 
-\item{addURLs}{Optional repository URLs in addition to CRAN, such as
-\url{https://statnet.r-universe.dev}. Defaults to none.}
+\item{betas}{Optional repository specification 
+\url{https://statnet.r-universe.dev} to install the latest public
+development versions of the packages. Defaults to FALSE.}
 }
 \value{
 \code{update_statnet} returns NULL invisibly.
@@ -34,12 +35,13 @@ since there are no good ways to update packages once they are loaded.
 With no additional arguments specified, the function will update the
 packages from CRAN.
 
-To obtain the latest build (binaries) from the master branch of the \code{statnet}
-public GitHub repositories, add the url for \code{statnet at R-universe}.
-More information here: \url{https://statnet.r-universe.dev}.  Note
+You can also obtain the latest build for the suite of packages
+from the master branches of the \code{statnet}
+public GitHub repositories with the \code{betas} argument.  This will
+install from the binaries hosted at \url{https://statnet.r-universe.dev}.  Note
 that while these nightly builds have passed continuous integration tests, 
-they may have other bugs.  Please report any bugs you find on the GitHub package
-repository.
+they may have other bugs and incompatibilities.  
+Please report any bugs on the GitHub package repository.
 }
 \examples{
 
@@ -47,8 +49,8 @@ repository.
 # Update from CRAN
 statnet::update_statnet()
 
-# Update latest build of public master branch from GitHub
-statnet::update_statnet()
+# Update using latest build of GitHub public master branch on r-universe
+statnet::update_statnet(betas = TRUE)
 }
 
 }

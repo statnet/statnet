@@ -48,7 +48,7 @@
 #' @export
 update_statnet <- function(..., ask = FALSE, checkBuilt=TRUE, betas = FALSE){
   if(betas) {
-    repos = "https://statnet.r-universe.dev") 
+    repos = "https://statnet.r-universe.dev" 
   } else {
     repos = getOption("repos")}
   update.packages(oldPkgs=c("statnet", "rle", "statnet.common", 
